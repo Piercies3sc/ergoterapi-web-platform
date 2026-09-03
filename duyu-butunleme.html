@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyu Bütünleme Terapisi - Uzm. Erg. Hazal Pural</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/tailwind-config.js"></script>
+</head>
+<body class="font-sans text-klinik-dark antialiased selection:bg-klinik-dark selection:text-white relative flex flex-col min-h-screen">
+
+    <!-- ÜST MENÜ -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-klinik-border py-4 px-4 md:px-8 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3 md:gap-4 group">
+            <img loading="lazy" src="amblem.png" alt="Hazal Pural Logo" class="h-10 md:h-12 w-auto object-contain group-hover:opacity-70 transition mr-1 md:mr-3">
+            <div class="flex flex-col border-l border-klinik-border pl-3 md:pl-4">
+                <span class="font-serif text-lg md:text-2xl font-semibold tracking-wide text-klinik-dark">Hazal PURAL</span>
+                <span class="font-sans text-[9px] md:text-xs text-klinik-accent tracking-[0.2em] uppercase mt-0.5">Uzman Ergoterapist</span>
+            </div>
+        </a>
+        <ul class="hidden md:flex items-center gap-8 lg:gap-10 text-sm font-medium tracking-wide">
+            <li><a href="index.html" class="hover:text-klinik-accent transition duration-300">Ana Sayfa</a></li>
+            <li><a href="index.html#hakkimda" class="hover:text-klinik-accent transition duration-300">Hakkımda</a></li>
+            <li class="relative group py-2">
+                <a href="index.html#hizmetler" class="hover:text-klinik-accent transition duration-300 flex items-center gap-1.5 cursor-pointer">
+                    Çalışma Alanları <i class="fa-solid fa-chevron-down text-[10px] ml-0.5"></i>
+                </a>
+                <div class="absolute left-0 top-full w-60 bg-white border border-klinik-border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <ul class="flex flex-col py-2">
+                        <li><a href="pediatrik.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Pediatrik Ergoterapi</a></li>
+                        <li><a href="duyu-butunleme.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Duyu Bütünleme Terapisi</a></li>
+                        <li><a href="yeme-bozuklugu.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">SOS Beslenme Terapisi</a></li>
+                        <li><a href="askeri.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Askeri Ergoterapi</a></li>
+                        <li><a href="norolojik.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Nörolojik Ergoterapi</a></li>
+                        <li><a href="psikiyatrik.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Psikiyatrik Ergoterapi</a></li>
+                        <li><a href="el-rehabilitasyonu.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">El Rehabilitasyonu</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="egitim.html" class="hover:text-klinik-accent transition duration-300">Sertifikalar</a></li>
+            <li><a href="index.html#sss-bolumu" class="hover:text-klinik-accent transition duration-300">S.S.S.</a></li>
+            <li><a href="index.html#iletisim" class="hover:text-klinik-accent transition duration-300">İletişim</a></li>
+            <li class="flex items-center gap-2 border-l border-klinik-border pl-4">
+                <span class="text-klinik-accent font-bold cursor-default">TR</span>
+                <span class="text-klinik-border">|</span>
+                <a href="en/duyu-butunleme.html" class="text-gray-400 hover:text-klinik-dark transition">EN</a>
+            </li>
+        </ul>
+        <button id="mobileMenuBtn" class="md:hidden text-klinik-dark text-2xl focus:outline-none p-2"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white border-t border-klinik-border shadow-lg flex-col md:hidden z-40">
+        <a href="index.html" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">Ana Sayfa</a>
+        <a href="index.html#hakkimda" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">Hakkımda</a>
+        <a href="index.html#hizmetler" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">Çalışma Alanları</a>
+        <a href="egitim.html" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">Sertifikalar</a>
+        <a href="index.html#sss-bolumu" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">S.S.S.</a>
+        <a href="index.html#iletisim" class="mobil-link px-8 py-4 text-sm font-medium text-klinik-dark hover:bg-slate-50">İletişim</a>
+        <div class="px-8 py-4 flex gap-4 text-sm font-medium border-b border-slate-100">
+            <span class="text-klinik-accent font-bold">TR</span>
+            <span class="text-klinik-border">|</span>
+            <a href="en/duyu-butunleme.html" class="text-gray-400 hover:text-klinik-dark transition">EN</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- HERO BÖLÜMÜ -->
+    <header class="bg-klinik-dark text-white py-24 px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-serif text-4xl md:text-5xl mb-6">Duyu Bütünleme Terapisi</h1>
+            <p class="font-sans text-lg text-gray-300 font-light leading-relaxed">Çevreden ve bedenden gelen duyusal bilgilerin beyinde organize edilerek günlük yaşama adaptasyonunu sağlayan, kanıta dayalı ve oyun temelli terapi yaklaşımı.</p>
+        </div>
+    </header>
+
+    <!-- ANA MAKALE KISMI -->
+    <main class="py-16 md:py-24 px-6 md:px-8 max-w-7xl mx-auto flex-grow">
+        <!-- HEADER TEXT & IMAGE -->
+        <div class="flex flex-col-reverse md:flex-row gap-12 lg:gap-20 items-center mb-20">
+            <div class="w-full md:w-1/2">
+                <h2 class="font-serif text-3xl md:text-4xl text-klinik-dark mb-6 leading-snug">Dünyayı <span class="italic text-klinik-accent">Nasıl Algılıyoruz?</span></h2>
+                <p class="font-sans text-klinik-accent font-light leading-relaxed mb-6">Duyu bütünleme, çevremizden ve kendi bedenimizden gelen duyusal bilgileri (dokunma, hareket, vücut farkındalığı, görme, işitme vb.) alıp organize etme ve bu bilgilere uygun adaptif yanıtlar oluşturma sürecidir. Beynimizin bu bilgileri doğru bir şekilde işlemesi, günlük yaşam aktivitelerimizi başarılı bir şekilde yerine getirmemizi sağlar.</p>
+                <p class="font-sans text-klinik-accent font-light leading-relaxed mb-8">Ancak bazı çocuklarda bu süreç aksayabilir. Duyusal uyaranlara aşırı tepki verme (örneğin etiketlerden rahatsız olma, sesten korkma) ya da tam tersi uyaran arayışında olma (sürekli hareket etme, çarpma ihtiyacı) gibi durumlar gözlemlenebilir.</p>
+            </div>
+            <div class="w-full md:w-1/2">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-klinik-dark opacity-10 transform translate-x-4 translate-y-4 rounded-sm transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                    <img loading="lazy" src="duyu-butunleme.jpg" alt="Duyu Bütünleme Terapisi" class="relative w-full h-auto object-cover aspect-video border border-klinik-border shadow-lg rounded-sm">
+                </div>
+            </div>
+        </div>
+
+        <!-- HEDEFLERİMİZ (CARDS) -->
+        <div class="mb-24">
+            <div class="text-center mb-12">
+                <h3 class="font-serif text-2xl md:text-3xl text-klinik-dark mb-4">Temel Duyusal Sistemler</h3>
+                <div class="w-12 h-0.5 bg-klinik-accent mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white border border-klinik-border p-8 shadow-sm hover:shadow-md transition-shadow group rounded-sm">
+                    <div class="w-12 h-12 bg-slate-50 border border-slate-200 rounded-full flex items-center justify-center mb-6 text-klinik-accent group-hover:bg-klinik-dark group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-hand-dots text-lg"></i>
+                    </div>
+                    <h4 class="font-serif text-lg text-klinik-dark mb-3">Taktil (Dokunma) Sistemi</h4>
+                    <p class="font-sans text-xs text-klinik-accent font-light leading-relaxed">Kıyafet etiketleri, farklı yüzeyler, kirlenme, sarılma gibi temas gerektiren uyaranları işleme becerisi.</p>
+                </div>
+                
+                <div class="bg-white border border-klinik-border p-8 shadow-sm hover:shadow-md transition-shadow group rounded-sm">
+                    <div class="w-12 h-12 bg-slate-50 border border-slate-200 rounded-full flex items-center justify-center mb-6 text-klinik-accent group-hover:bg-klinik-dark group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-arrows-spin text-lg"></i>
+                    </div>
+                    <h4 class="font-serif text-lg text-klinik-dark mb-3">Vestibüler Sistem (Hareket & Denge)</h4>
+                    <p class="font-sans text-xs text-klinik-accent font-light leading-relaxed">Yerçekimine karşı başın pozisyonunu algılama, zıplama, sallanma ve denge sağlama becerisi.</p>
+                </div>
+
+                <div class="bg-white border border-klinik-border p-8 shadow-sm hover:shadow-md transition-shadow group rounded-sm">
+                    <div class="w-12 h-12 bg-slate-50 border border-slate-200 rounded-full flex items-center justify-center mb-6 text-klinik-accent group-hover:bg-klinik-dark group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-person-walking text-lg"></i>
+                    </div>
+                    <h4 class="font-serif text-lg text-klinik-dark mb-3">Proprioseptif (Vücut Farkındalığı)</h4>
+                    <p class="font-sans text-xs text-klinik-accent font-light leading-relaxed">Kas ve eklemlerden gelen, vücut parçalarımızın nerede olduğunu ve ne kadar güç uyguladığımızı anlamamızı sağlayan sistem.</p>
+                </div>
+
+                <div class="bg-white border border-klinik-border p-8 shadow-sm hover:shadow-md transition-shadow group rounded-sm">
+                    <div class="w-12 h-12 bg-slate-50 border border-slate-200 rounded-full flex items-center justify-center mb-6 text-klinik-accent group-hover:bg-klinik-dark group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-eye text-lg"></i>
+                    </div>
+                    <h4 class="font-serif text-lg text-klinik-dark mb-3">Görsel & İşitsel Sistem</h4>
+                    <p class="font-sans text-xs text-klinik-accent font-light leading-relaxed">Ortamdaki ses ve ışıklara karşı verilen tepkiler, odaklanma ve dikkat becerilerini etkileyen sistemler.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- YAKLAŞIM / SÜREÇ (TIMELINE) -->
+        <div class="bg-slate-50 border border-klinik-border p-10 md:p-16 mb-24 rounded-sm">
+            <div class="text-center mb-12">
+                <h3 class="font-serif text-2xl md:text-3xl text-klinik-dark mb-4">Nasıl Destek Oluyoruz?</h3>
+                <p class="font-sans text-sm text-klinik-accent font-light">Oyun temelli ve yapılandırılmış aktivitelerle sinir sisteminin regüle edilmesi.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8 md:gap-0 relative">
+                <div class="hidden md:block absolute top-6 left-[10%] w-[80%] h-[1px] bg-klinik-border z-0"></div>
+                
+                <div class="flex-1 relative z-10 flex flex-col items-center text-center group">
+                    <div class="w-12 h-12 bg-white border-2 border-klinik-dark text-klinik-dark rounded-full flex items-center justify-center font-bold mb-4 group-hover:bg-klinik-dark group-hover:text-white transition-colors">1</div>
+                    <h4 class="font-sans text-sm font-semibold text-klinik-dark mb-2">Duyusal Değerlendirme</h4>
+                    <p class="font-sans text-xs text-klinik-accent font-light px-4">Çocuğun duyusal profilinin klinik gözlem ve ebeveyn bildirimli testlerle belirlenmesi.</p>
+                </div>
+
+                <div class="flex-1 relative z-10 flex flex-col items-center text-center group">
+                    <div class="w-12 h-12 bg-white border-2 border-klinik-dark text-klinik-dark rounded-full flex items-center justify-center font-bold mb-4 group-hover:bg-klinik-dark group-hover:text-white transition-colors">2</div>
+                    <h4 class="font-sans text-sm font-semibold text-klinik-dark mb-2">Hedefli Müdahale</h4>
+                    <p class="font-sans text-xs text-klinik-accent font-light px-4">Özel donanımlı duyu bütünleme odasında çocuğun aktif katılım sağladığı terapi seansları.</p>
+                </div>
+
+                <div class="flex-1 relative z-10 flex flex-col items-center text-center group">
+                    <div class="w-12 h-12 bg-white border-2 border-klinik-dark text-klinik-dark rounded-full flex items-center justify-center font-bold mb-4 group-hover:bg-klinik-dark group-hover:text-white transition-colors">3</div>
+                    <h4 class="font-sans text-sm font-semibold text-klinik-dark mb-2">Duyusal Diyet</h4>
+                    <p class="font-sans text-xs text-klinik-accent font-light px-4">Çocuğun evde ve okulda duyusal ihtiyaçlarını karşılamak üzere hazırlanan günlük aktiviteler bütünü.</p>
+                </div>
+
+                <div class="flex-1 relative z-10 flex flex-col items-center text-center group">
+                    <div class="w-12 h-12 bg-white border-2 border-klinik-dark text-klinik-dark rounded-full flex items-center justify-center font-bold mb-4 group-hover:bg-klinik-dark group-hover:text-white transition-colors">4</div>
+                    <h4 class="font-sans text-sm font-semibold text-klinik-dark mb-2">Adaptasyon ve Regülasyon</h4>
+                    <p class="font-sans text-xs text-klinik-accent font-light px-4">Dikkat süresinin artması, öfke nöbetlerinin azalması ve çevreye uyum becerilerinin gelişimi.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENDİKASYONLAR (TAGS) -->
+        <div>
+            <div class="text-center mb-10">
+                <h3 class="font-serif text-2xl md:text-3xl text-klinik-dark mb-4">Sık Karşılaşılan İşaretler</h3>
+                <p class="font-sans text-sm text-klinik-accent font-light max-w-2xl mx-auto">Aşağıdaki durumlardan bir veya birkaçını gözlemliyorsanız, duyu bütünleme terapisi faydalı olabilir.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-4xl mx-auto">
+                <span class="px-5 py-2.5 bg-white border border-klinik-border rounded-full text-xs font-medium text-klinik-dark shadow-sm flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-klinik-accent"></i> Sese, ışığa veya dokunmaya aşırı hassasiyet</span>
+                <span class="px-5 py-2.5 bg-white border border-klinik-border rounded-full text-xs font-medium text-klinik-dark shadow-sm flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-klinik-accent"></i> Sürekli zıplama, dönme veya çarpma ihtiyacı</span>
+                <span class="px-5 py-2.5 bg-white border border-klinik-border rounded-full text-xs font-medium text-klinik-dark shadow-sm flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-klinik-accent"></i> Yemek seçiciliği (dokusal veya kokusal)</span>
+                <span class="px-5 py-2.5 bg-white border border-klinik-border rounded-full text-xs font-medium text-klinik-dark shadow-sm flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-klinik-accent"></i> Sakarlık ve denge problemleri</span>
+                <span class="px-5 py-2.5 bg-white border border-klinik-border rounded-full text-xs font-medium text-klinik-dark shadow-sm flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-klinik-accent"></i> Dikkat dağınıklığı ve odaklanma zorluğu</span>
+                <span class="px-5 py-2.5 bg-white border border-klinik-border rounded-full text-xs font-medium text-klinik-dark shadow-sm flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-klinik-accent"></i> Öfke nöbetleri ve duygu regülasyonunda zorluk</span>
+                <span class="px-5 py-2.5 bg-white border border-klinik-border rounded-full text-xs font-medium text-klinik-dark shadow-sm flex items-center gap-2"><i class="fa-solid fa-check text-[10px] text-klinik-accent"></i> Saç kestirme, tırnak kesme gibi durumlarda tepki</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- OKULA HAZIRLIK VİDEO BÖLÜMÜ -->
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+        <!-- İLGİLİ SERTİFİKALAR -->
+        <section class="py-16 bg-slate-50 border-t border-klinik-border">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="text-center mb-10">
+                    <h3 class="font-serif text-2xl md:text-3xl text-klinik-dark mb-4">Bu Alandaki Eğitimlerim</h3>
+                    <div class="w-12 h-0.5 bg-klinik-accent mx-auto"></div>
+                </div>
+                
+                <div class="relative group">
+                    <!-- Left Arrow -->
+                    <button onclick="this.parentElement.querySelector('.carousel-container').scrollBy({left: -350, behavior: 'smooth'})" 
+                            class="absolute -left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-md items-center justify-center text-klinik-dark hover:text-klinik-accent hover:bg-slate-50 z-10 border border-slate-200 transition-all opacity-0 group-hover:opacity-100 hidden md:flex cursor-pointer">
+                        <i class="fa-solid fa-chevron-left text-lg"></i>
+                    </button>
+                    
+                    <div class="carousel-container flex overflow-x-auto gap-6 pb-6 snap-x hide-scroll scroll-smooth">
+    
+                        <div class="min-w-[300px] md:min-w-[350px] max-w-[350px] snap-start bg-white p-6 border border-klinik-border rounded-sm shadow-sm flex flex-col relative z-0">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center border border-klinik-border flex-shrink-0">
+                                    <i class="fa-solid fa-certificate text-klinik-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-base text-klinik-dark mb-1 leading-snug">Children With Autism in a School Environment</h4>
+                                    <p class="font-sans text-[11px] text-klinik-accent">Alison</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-3 border-t border-dashed border-klinik-border flex justify-between items-center">
+                                <span class="font-sans text-[9px] uppercase tracking-wider text-klinik-accent"><i class="fa-regular fa-calendar mr-1"></i> Ağu 2026</span>
+                                <button onclick="openCertModal('assets/images/certs/children-with-autism.png')" class="w-7 h-7 rounded-full bg-white border border-slate-200 flex items-center justify-center text-klinik-dark hover:text-klinik-accent hover:bg-slate-50 transition-colors shadow-sm cursor-pointer" title="Görüntüle">
+                                    <i class="fa-solid fa-eye text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="min-w-[300px] md:min-w-[350px] max-w-[350px] snap-start bg-white p-6 border border-klinik-border rounded-sm shadow-sm flex flex-col relative z-0">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center border border-klinik-border flex-shrink-0">
+                                    <i class="fa-solid fa-certificate text-klinik-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-base text-klinik-dark mb-1 leading-snug">Early Intervention and School Assessment Course 6812</h4>
+                                    <p class="font-sans text-[11px] text-klinik-accent">OccupationalTherapy.com</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-3 border-t border-dashed border-klinik-border flex justify-between items-center">
+                                <span class="font-sans text-[9px] uppercase tracking-wider text-klinik-accent"><i class="fa-regular fa-calendar mr-1"></i> May 2025</span>
+                                <button onclick="openCertModal('https://via.placeholder.com/800x600.png?text=Sertifika+Gorseli')" class="w-7 h-7 rounded-full bg-white border border-slate-200 flex items-center justify-center text-klinik-dark hover:text-klinik-accent hover:bg-slate-50 transition-colors shadow-sm cursor-pointer" title="Görüntüle">
+                                    <i class="fa-solid fa-eye text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="min-w-[300px] md:min-w-[350px] max-w-[350px] snap-start bg-white p-6 border border-klinik-border rounded-sm shadow-sm flex flex-col relative z-0">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center border border-klinik-border flex-shrink-0">
+                                    <i class="fa-solid fa-certificate text-klinik-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-base text-klinik-dark mb-1 leading-snug">(G39) Transform Your Practice With Sensory Integration: A Free Course for Therapists</h4>
+                                    <p class="font-sans text-[11px] text-klinik-accent">Sensory Integration Education</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-3 border-t border-dashed border-klinik-border flex justify-between items-center">
+                                <span class="font-sans text-[9px] uppercase tracking-wider text-klinik-accent"><i class="fa-regular fa-calendar mr-1"></i> May 2025</span>
+                                <button onclick="openCertModal('assets/images/certs/g39-sensory-integration.png')" class="w-7 h-7 rounded-full bg-white border border-slate-200 flex items-center justify-center text-klinik-dark hover:text-klinik-accent hover:bg-slate-50 transition-colors shadow-sm cursor-pointer" title="Görüntüle">
+                                    <i class="fa-solid fa-eye text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="min-w-[300px] md:min-w-[350px] max-w-[350px] snap-start bg-white p-6 border border-klinik-border rounded-sm shadow-sm flex flex-col relative z-0">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center border border-klinik-border flex-shrink-0">
+                                    <i class="fa-solid fa-certificate text-klinik-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-base text-klinik-dark mb-1 leading-snug">Regülasyonun Temelleri</h4>
+                                    <p class="font-sans text-[11px] text-klinik-accent">Sense On</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-3 border-t border-dashed border-klinik-border flex justify-between items-center">
+                                <span class="font-sans text-[9px] uppercase tracking-wider text-klinik-accent"><i class="fa-regular fa-calendar mr-1"></i> Şub 2022</span>
+                                <button onclick="openCertModal('https://via.placeholder.com/800x600.png?text=Sertifika+Gorseli')" class="w-7 h-7 rounded-full bg-white border border-slate-200 flex items-center justify-center text-klinik-dark hover:text-klinik-accent hover:bg-slate-50 transition-colors shadow-sm cursor-pointer" title="Görüntüle">
+                                    <i class="fa-solid fa-eye text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    
+                    <!-- Right Arrow -->
+                    <button onclick="this.parentElement.querySelector('.carousel-container').scrollBy({left: 350, behavior: 'smooth'})" 
+                            class="absolute -right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-md items-center justify-center text-klinik-dark hover:text-klinik-accent hover:bg-slate-50 z-10 border border-slate-200 transition-all opacity-0 group-hover:opacity-100 hidden md:flex cursor-pointer">
+                        <i class="fa-solid fa-chevron-right text-lg"></i>
+                    </button>
+                </div>
+                
+                <style>
+                .hide-scroll::-webkit-scrollbar { display: none; }
+                .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+                </style>
+            </div>
+        </section>
+    
+    <section id="video-kismi" class="py-20 bg-slate-50 border-t border-klinik-border">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center bg-white border border-klinik-border p-6 md:p-10 shadow-sm hover:shadow-md transition-shadow duration-300">
+                
+                <!-- Video Kısmı (Sol) -->
+                <div class="w-full lg:w-5/12 bg-gray-900 relative rounded-sm overflow-hidden">
+                    <div class="video-preview-wrapper" onclick="openVideoModal('okula-hazirlik.mp4#t=0.001')">
+                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+
+                <!-- Metin Kısmı (Sağ) - Düğme Yok -->
+                <div class="w-full lg:w-7/12">
+                    <span class="font-sans text-xs font-semibold text-klinik-accent tracking-[0.2em] uppercase mb-3 block">Örnek Vaka & Açıklama</span>
+                    <h3 class="font-serif text-2xl md:text-3xl text-klinik-dark mb-6 leading-snug">Çocuğunuz okula başlayacak ama dikkatini toplayamıyor mu?</h3>
+                    
+                    <div class="font-sans text-sm text-klinik-accent font-light leading-relaxed space-y-5">
+                        <p>Okul ortamı, bir çocuk için oldukça yoğun duyusal girdilerin (zil sesi, kalabalık uğultusu, görsel panolar, sırada dik oturma zorunluluğu) olduğu bir yerdir. Duyusal işlemleme farklılıkları olan bir çocuk, bu uyaran seli içinde kendini regüle etmekte zorlanabilir.</p>
+                        <p>Duyu bütünleme becerileri, okula hazırlık sürecinde kritik bir rol oynar. Dikkat dağınıklığı, sırasını bekleyememe veya kalem tutma gibi ince motor becerilerde zorlanma durumları genellikle tembelce bir tavır değil, altta yatan duyusal ihtiyaçların bir yansımasıdır.</p>
+                        <p class="font-medium text-klinik-dark text-base">
+                            <i class="fa-solid fa-play text-xs mr-2"></i> Okul ortamında çocukların yaşadığı bu zorlukların duyusal altyapısını ve nasıl destekleyebileceğimizi yandaki videomuzda detaylıca anlattık!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="iletisim" class="bg-klinik-dark text-white py-12 md:py-16 px-6 md:px-8 mt-auto border-t border-white/15">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 border-b border-white/15 pb-10 md:pb-12">
+        <div class="flex flex-col">
+            <a href="index.html" class="flex items-center gap-4 mb-6 group">
+                <img loading="lazy" src="amblem.png" alt="Hazal Pural Logo" class="h-10 md:h-12 w-auto object-contain transition mr-1 md:mr-2 brightness-0 invert">
+                <div class="flex flex-col border-l border-gray-500 pl-4">
+                    <span class="font-serif text-xl md:text-2xl font-semibold tracking-wide text-white">Hazal PURAL</span>
+                    <span class="font-sans text-[10px] md:text-xs text-gray-400 tracking-[0.2em] uppercase mt-0.5">Uzm. Ergoterapist</span>
+                </div>
+            </a>
+            <a href="mailto:hazalpural@gmail.com" class="font-sans text-sm text-gray-300 hover:text-white transition inline-block mt-2"><i class="fa-regular fa-envelope mr-2"></i> hazalpural@gmail.com</a>
+            <div class="flex gap-4 mt-6 md:mt-8">
+                <a href="https://www.instagram.com/ergoterapist_hazalpural/" class="border border-white/20 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white hover:text-klinik-dark transition text-gray-300"><i class="fa-brands fa-instagram text-sm"></i></a>
+                <a href="https://www.linkedin.com/in/hazalpural/" class="border border-white/20 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white hover:text-klinik-dark transition text-gray-300"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            </div>
+        </div>
+        <div>
+            <div class="flex items-center gap-3 mb-4 md:mb-6">
+                <img loading="lazy" src="amblem.png" alt="Hazal Pural Logo" class="h-8 md:h-10 w-auto object-contain mr-1 brightness-0 invert opacity-50">
+                <h4 class="font-sans text-base md:text-lg font-semibold m-0 relative z-10">Sınırlı Sorumluluk Beyanı</h4>
+            </div>
+            <p class="font-sans text-xs md:text-sm text-gray-300 leading-relaxed font-light relative z-10">Web sitemizin içeriği, ziyaretçiyi bilgilendirmeye yönelik hazırlanmıştır. Sitede yer alan bilgiler, hiçbir zaman bir hekim tedavisinin ya da konsültasyonunun yerini alamaz. Bu kaynaktan yola çıkarak, ilaç tedavisine başlanması ya da mevcut tedavinin değiştirilmesi kesinlikle tavsiye edilmez.</p>
+        </div>
+        <div class="md:pl-12 relative z-10">
+            <h4 class="font-sans text-base md:text-lg font-semibold mb-4 md:mb-6">Menü</h4>
+            <ul class="flex flex-col gap-3 md:gap-4 font-sans text-sm text-gray-300 font-light">
+                <li><a href="index.html" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Anasayfa</a></li>
+                <li><a href="index.html#hakkimda" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Hakkımda</a></li>
+                <li><a href="egitim.html" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Sertifikalar</a></li>
+                <li><a href="index.html#hizmetler" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Çalışma Alanları</a></li>
+                <li><a href="index.html#iletisim" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-6 md:mt-8 text-center text-gray-500 text-[10px] md:text-xs font-light relative z-10"><p>&copy; 2026 Uzm. Erg. Hazal Pural. Tüm hakları saklıdır.</p></div>
+</footer>
+
+    <!-- YÜZEN WHATSAPP BUTONU -->
+    <a href="https://wa.me/905538084472?text=Merhaba%20Hazal%20Han%C4%B1m,%20web%20sitenizden%20ula%C5%9F%C4%B1yorum,%20bilgi%20alabilir%20miyim?" target="_blank" rel="noopener noreferrer" class="fixed bottom-4 left-4 md:bottom-8 md:left-8 z-50 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-all duration-300 group focus:outline-none" aria-label="WhatsApp'tan Bize Ulaşın">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-70 animate-ping"></span>
+        <i class="fa-brands fa-whatsapp text-2xl md:text-3xl relative z-10"></i>
+        <span class="absolute left-14 md:left-16 bg-white text-klinik-dark text-[10px] md:text-xs font-semibold px-2 md:px-3 py-1.5 md:py-2 rounded shadow-md opacity-0 invisible md:group-hover:opacity-100 md:group-hover:visible transition-all whitespace-nowrap">Bize Yazın</span>
+    </a>
+
+    <!-- YUKARI ÇIK BUTONU -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-klinik-dark text-white shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 hover:bg-klinik-hover focus:outline-none" aria-label="Yukarı Çık">
+        <i class="fa-solid fa-chevron-up text-sm md:text-base"></i>
+    </button>
+
+    
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+    
+    
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300" onclick="closeVideoModal()">
+        <div class="relative w-full max-w-4xl flex items-center justify-center">
+            <button onclick="closeVideoModal()" class="absolute -top-12 right-0 text-white hover:text-klinik-accent text-3xl transition-colors cursor-pointer" title="Kapat">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="w-full aspect-video bg-black rounded shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
+                <video id="modalVideoPlayer" class="w-full h-full" controls playsinline>
+                    <source src="" type="video/mp4">
+                    Tarayıcınız video etiketini desteklemiyor.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- CERTIFICATE MODAL -->
+    <div id="certModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300" onclick="closeCertModal()">
+        <div class="relative w-full max-w-4xl flex items-center justify-center">
+            <button onclick="closeCertModal()" class="absolute -top-12 right-0 text-white hover:text-klinik-accent text-3xl transition-colors cursor-pointer" title="Kapat">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="certModalImg" src="" alt="Sertifika" class="max-w-full max-h-[85vh] object-contain rounded shadow-2xl" onclick="event.stopPropagation()">
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

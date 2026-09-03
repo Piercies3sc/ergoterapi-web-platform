@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzm. Erg. Hazal Pural - Occupational Therapist</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/tailwind-config.js"></script>
+</head>
+<body class="font-sans text-klinik-dark antialiased selection:bg-klinik-dark selection:text-white relative">
+
+    <!-- ÜST MENÜ -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-klinik-border py-4 px-4 md:px-8 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="../en/index.html" class="flex items-center gap-3 md:gap-4 group">
+            <img loading="lazy" src="../amblem.png" alt="Hazal Pural Logo" class="h-10 md:h-12 w-auto object-contain group-hover:opacity-70 transition mr-1 md:mr-3">
+            <div class="flex flex-col border-l border-klinik-border pl-3 md:pl-4">
+                <span class="font-serif text-lg md:text-2xl font-semibold tracking-wide text-klinik-dark">Hazal PURAL</span>
+                <span class="font-sans text-[9px] md:text-xs text-klinik-accent tracking-[0.2em] uppercase mt-0.5">Occupational Therapist</span>
+            </div>
+        </a>
+        <ul class="hidden md:flex items-center gap-8 lg:gap-10 text-sm font-medium tracking-wide">
+            <li><a href="../en/index.html" class="hover:text-klinik-accent transition duration-300">Home</a></li>
+            <li><a href="../en/index.html#hakkimda" class="hover:text-klinik-accent transition duration-300">About Me</a></li>
+            <li class="relative group py-2">
+                <a href="../en/index.html#hizmetler" class="hover:text-klinik-accent transition duration-300 flex items-center gap-1.5 cursor-pointer">
+                    Services <i class="fa-solid fa-chevron-down text-[10px] ml-0.5"></i>
+                </a>
+                <div class="absolute left-0 top-full w-60 bg-white border border-klinik-border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <ul class="flex flex-col py-2">
+                        <li><a href="../en/pediatrik.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Pediatric OT</a></li>
+                        <li><a href="../en/duyu-butunleme.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Sensory Integration</a></li>
+                        <li><a href="../en/yeme-bozuklugu.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">SOS Feeding Therapy</a></li>
+                        <li><a href="../en/askeri.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Military OT</a></li>
+                        <li><a href="../en/norolojik.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Neurological OT</a></li>
+                        <li><a href="../en/psikiyatrik.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Psychiatric OT</a></li>
+                        <li><a href="../en/el-rehabilitasyonu.html" class="block px-5 py-2.5 text-xs text-klinik-dark hover:bg-slate-50 transition">Hand Rehabilitation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="../en/egitim.html" class="hover:text-klinik-accent transition duration-300">Certifications</a></li>
+            <li><a href="../en/index.html#iletisim" class="hover:text-klinik-accent transition duration-300">Contact</a></li>
+            <li class="flex items-center gap-2 border-l border-klinik-border pl-4">
+                <a href="../index.html" class="text-gray-400 hover:text-klinik-dark transition">TR</a>
+                <span class="text-klinik-border">|</span>
+                <span class="text-klinik-accent font-bold cursor-default">EN</span>
+            </li>
+        </ul>
+        <button id="mobileMenuBtn" class="md:hidden text-klinik-dark text-2xl focus:outline-none p-2"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white border-t border-klinik-border shadow-lg flex-col md:hidden z-40">
+        <a href="../en/index.html" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">Home</a>
+        <a href="../en/index.html#hakkimda" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">About Me</a>
+        <a href="../en/index.html#hizmetler" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">Services</a>
+        <a href="../en/egitim.html" class="mobil-link px-8 py-4 border-b border-slate-100 text-sm font-medium text-klinik-dark hover:bg-slate-50">Certifications</a>
+        <a href="../en/index.html#iletisim" class="mobil-link px-8 py-4 text-sm font-medium text-klinik-dark hover:bg-slate-50">Contact</a>
+        <div class="px-8 py-4 flex gap-4 text-sm font-medium border-b border-slate-100">
+            <a href="../index.html" class="text-gray-400 hover:text-klinik-dark transition">TR</a>
+            <span class="text-klinik-border">|</span>
+            <span class="text-klinik-accent font-bold cursor-default">EN</span>
+        </div>
+    </div>
+</nav>
+
+    <!-- HERO -->
+    <header class="bg-klinik-dark text-white py-14 md:py-20 px-6 md:px-8 border-b border-white/10">
+        <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
+            <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl text-white mb-5 md:mb-6 leading-tight">
+                Conscious Steps <br>
+                <span class="italic text-[#d8c5a2] font-normal">for an Independent Life</span>
+            </h1>
+            <p class="font-sans text-sm md:text-lg text-gray-200/90 max-w-2xl font-light leading-relaxed">
+                Evidence-based and person-centered occupational therapy services that support individuals' meaningful participation in activities of daily living.
+            </p>
+        </div>
+    </header>
+
+    <!-- HAKKIMDA -->
+    <section id="hakkimda" class="py-16 md:py-24 px-6 md:px-8 border-t border-klinik-border bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            <div class="w-full md:w-5/12 max-w-sm md:max-w-none mx-auto"><div class="aspect-[4/5] w-full bg-slate-100 border border-klinik-border p-2"><img loading="lazy" src="../profes.png" alt="Uzm. Erg. Hazal Pural" class="w-full h-full object-cover"></div></div>
+            <div class="w-full md:w-7/12 text-left">
+                <h2 class="font-sans text-xs font-semibold text-klinik-accent tracking-[0.2em] uppercase mb-4">Who is Hazal Pural?</h2>
+                <h3 class="font-serif text-3xl md:text-4xl text-klinik-dark mb-6 md:mb-8">Specialist Occupational Therapist Hazal Pural</h3>
+                
+                <p class="font-sans text-klinik-accent mb-4 leading-relaxed font-light text-sm md:text-base">Specialist Occupational Therapist Hazal Pural is a healthcare professional dedicated to maximizing individuals' potentials and achieving full independence in daily life. Adopting a holistic perspective embracing the core principles of occupational therapy science, she evaluates the physical, sensory, and psychological needs of every client.</p>
+                
+                <p class="font-sans text-klinik-accent mb-4 leading-relaxed font-light text-sm md:text-base">After successfully completing her undergraduate and specialization education; she has conducted comprehensive clinical studies in specific areas such as pediatric development, sensory integration therapy, eating disorders (SOS Feeding Therapy), and neurological and psychiatric rehabilitation. She not only supports children's motor and cognitive development but also guides families to be the strongest supporters in this process.</p>
+                
+                <p class="font-sans text-klinik-accent leading-relaxed font-light mb-8 text-sm md:text-base">For Hazal Pural, therapy is not just an intervention process; it is about the individual participating meaningfully in their own life again and regaining the belief of <strong class="font-medium text-klinik-dark">"I can do it"</strong>. She has dedicated her professional life to offering modern, evidence-based methods with love, empathy, and unconditional acceptance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIZLI TANI VE DURUM ETİKETLERİ -->
+    <section class="py-12 md:py-16 bg-slate-50 border-t border-b border-klinik-border">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+            <h2 class="font-sans text-[10px] md:text-xs font-semibold text-klinik-accent tracking-[0.2em] uppercase mb-6 md:mb-8">When Can You Get Support?</h2>
+            
+            <div class="flex flex-wrap justify-center gap-2 md:gap-3 max-w-4xl mx-auto transition-all duration-500">
+                <button onclick="highlightCards(['card-pediatrik', 'card-duyu'])" class="px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Autism Spectrum Disorder</button>
+                <button onclick="highlightCards(['card-norolojik'])" class="px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Post Stroke (Paralysis)</button>
+                <button onclick="highlightCards(['card-duyu', 'card-pediatrik'])" class="px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Attention Deficit (ADHD)</button>
+                <button onclick="highlightCards(['card-yeme'])" class="px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Food Refusal (Picky Eater)</button>
+                <button onclick="highlightCards(['card-el'])" class="px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Carpal Tunnel Syndrome</button>
+                <button onclick="highlightCards(['card-duyu'])" class="px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Sensory Processing Disorder</button>
+                <button onclick="highlightCards(['card-norolojik', 'card-psikiyatrik'])" class="px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Traumatic Brain Injury</button>
+                <button onclick="highlightCards(['card-pediatrik'])" class="px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Cerebral Palsy (CP)</button>
+                
+                <button onclick="highlightCards(['card-pediatrik'])" class="gizli-etiket hidden px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Developmental Delay</button>
+                <button onclick="highlightCards(['card-norolojik'])" class="gizli-etiket hidden px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">MS (Multiple Sclerosis)</button>
+                <button onclick="highlightCards(['card-pediatrik'])" class="gizli-etiket hidden px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Down Syndrome</button>
+                <button onclick="highlightCards(['card-pediatrik', 'card-duyu'])" class="gizli-etiket hidden px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Specific Learning Disability (Dyslexia)</button>
+                <button onclick="highlightCards(['card-el'])" class="gizli-etiket hidden px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Rheumatoid Arthritis</button>
+                <button onclick="highlightCards(['card-psikiyatrik'])" class="gizli-etiket hidden px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Schizophrenia & Bipolar</button>
+                <button onclick="highlightCards(['card-askeri', 'card-norolojik'])" class="gizli-etiket hidden px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Amputation and Prosthesis</button>
+                <button onclick="highlightCards(['card-norolojik', 'card-psikiyatrik'])" class="gizli-etiket hidden px-4 py-2 md:px-5 md:py-2.5 bg-white border border-klinik-border rounded-full text-[11px] md:text-xs text-klinik-dark hover:bg-klinik-dark hover:text-white transition duration-300 shadow-sm focus:outline-none">Dementia & Alzheimer's</button>
+            </div>
+            
+            <div class="mt-6 md:mt-8">
+                <button id="toggleBtn" onclick="toggleTags()" class="font-sans text-[11px] md:text-xs font-semibold uppercase tracking-wider text-klinik-accent hover:text-klinik-dark transition border-b border-dashed border-klinik-accent hover:border-klinik-dark pb-0.5 focus:outline-none">
+                    View All +
+                </button>
+            </div>
+            
+            <p class="font-sans text-[10px] md:text-xs text-klinik-accent mt-6 md:mt-8 font-light italic px-4">For our detailed treatment approaches, you can review our specialties below &darr;</p>
+        </div>
+    </section>
+
+    <!-- HİZMETLER KARTLARI -->
+    <section id="hizmetler" class="py-16 md:py-32 px-6 md:px-8 bg-klinik-light">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="font-sans text-xs font-semibold text-klinik-accent tracking-[0.2em] uppercase mb-4">Our Expertise</h2>
+            <h3 class="font-serif text-3xl md:text-4xl text-klinik-dark mb-12 md:mb-20">Specialties</h3>
+            
+            <div class="mb-8 max-w-md mx-auto relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-klinik-accent/60"></i>
+                <input type="text" id="hizmet-arama" placeholder="Search for a service or keyword..." 
+                       class="w-full pl-12 pr-4 py-3 md:py-4 bg-white border border-klinik-border rounded-full text-sm focus:outline-none focus:border-klinik-dark focus:ring-1 focus:ring-klinik-dark shadow-sm transition-all text-klinik-dark placeholder-slate-400">
+            </div>
+            
+            <div id="kart-konteyneri" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 text-left">
+                <a href="pediatrik.html" id="card-pediatrik" class="hizmet-karti group block bg-white border border-klinik-border p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"><div class="overflow-hidden mb-6 aspect-video bg-slate-100"><img loading="lazy" src="../pediatrik.jpg" alt="Pediatric" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"></div><h4 class="font-serif text-xl text-klinik-dark mb-3">Pediatric Occupational Therapy</h4><p class="font-sans text-klinik-accent text-xs leading-relaxed mb-6 font-light">Increases children's independence by supporting their motor, sensory, and cognitive skills.</p><span class="font-sans text-xs font-medium uppercase tracking-wider text-klinik-dark group-hover:text-klinik-hover transition">View Details &rarr;</span></a>
+                <a href="duyu-butunleme.html" id="card-duyu" class="hizmet-karti group block bg-white border border-klinik-border p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"><div class="overflow-hidden mb-6 aspect-video bg-slate-100"><img loading="lazy" src="../duyu-butunleme.jpg" alt="Sensory Integration Therapy" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"></div><h4 class="font-serif text-xl text-klinik-dark mb-3">Sensory Integration Therapy</h4><p class="font-sans text-klinik-accent text-xs leading-relaxed mb-6 font-light">Ensures sensory information from the environment and body is correctly processed by the brain.</p><span class="font-sans text-xs font-medium uppercase tracking-wider text-klinik-dark group-hover:text-klinik-hover transition">View Details &rarr;</span></a>
+                <a href="yeme-bozuklugu.html" id="card-yeme" class="hizmet-karti group block bg-white border border-klinik-border p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"><div class="overflow-hidden mb-6 aspect-video bg-slate-100"><img loading="lazy" src="../yeme-bozuklugu.jpg" alt="SOS Feeding Therapy" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"></div><h4 class="font-serif text-xl text-klinik-dark mb-3">SOS Feeding Therapy</h4><p class="font-sans text-klinik-accent text-xs leading-relaxed mb-6 font-light">Therapy involving sensory approaches for individuals with food refusal and feeding difficulties.</p><span class="font-sans text-xs font-medium uppercase tracking-wider text-klinik-dark group-hover:text-klinik-hover transition">View Details &rarr;</span></a>
+                <a href="askeri.html" id="card-askeri" class="hizmet-karti group block bg-white border border-klinik-border p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"><div class="overflow-hidden mb-6 aspect-video bg-slate-100"><img loading="lazy" src="../askeri.jpg" alt="Military" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"></div><h4 class="font-serif text-xl text-klinik-dark mb-3">Military Occupational Therapy</h4><p class="font-sans text-klinik-accent text-xs leading-relaxed mb-6 font-light">Supports the physical or post-rehabilitation adaptation of military personnel.</p><span class="font-sans text-xs font-medium uppercase tracking-wider text-klinik-dark group-hover:text-klinik-hover transition">View Details &rarr;</span></a>
+                <a href="norolojik.html" id="card-norolojik" class="hizmet-karti group block bg-white border border-klinik-border p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                    <div class="overflow-hidden mb-6 aspect-video bg-slate-100"><img loading="lazy" src="../norolojik-rehabilitasyon.jpg" alt="Neurological" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"></div>
+                    <h4 class="font-serif text-xl text-klinik-dark mb-3">Neurological Occupational Therapy</h4><p class="font-sans text-klinik-accent text-xs leading-relaxed mb-6 font-light">Regaining daily skills lost after stroke, MS, or spinal cord injuries.</p><span class="font-sans text-xs font-medium uppercase tracking-wider text-klinik-dark group-hover:text-klinik-hover transition">View Details &rarr;</span>
+                </a>
+                <a href="psikiyatrik.html" id="card-psikiyatrik" class="hizmet-karti group block bg-white border border-klinik-border p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                    <div class="overflow-hidden mb-6 aspect-video bg-slate-100"><img loading="lazy" src="../psiklojik.jpg" alt="Psychiatric" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"></div>
+                    <h4 class="font-serif text-xl text-klinik-dark mb-3">Psychiatric Occupational Therapy</h4><p class="font-sans text-klinik-accent text-xs leading-relaxed mb-6 font-light">Participation of individuals experiencing mental health challenges in social life and meaningful activities.</p><span class="font-sans text-xs font-medium uppercase tracking-wider text-klinik-dark group-hover:text-klinik-hover transition">View Details &rarr;</span>
+                </a>
+                <a href="el-rehabilitasyonu.html" id="card-el" class="hizmet-karti group block bg-white border border-klinik-border p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                    <div class="overflow-hidden mb-6 aspect-video bg-slate-100"><img loading="lazy" src="../El-Rehabilitasyonu.jpg" alt="Hand Rehabilitation" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"></div>
+                    <h4 class="font-serif text-xl text-klinik-dark mb-3">Hand Rehabilitation</h4><p class="font-sans text-klinik-accent text-xs leading-relaxed mb-6 font-light">Restoration of functions after upper extremity (hand, wrist, arm) injuries and surgeries.</p><span class="font-sans text-xs font-medium uppercase tracking-wider text-klinik-dark group-hover:text-klinik-hover transition">View Details &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIKÇA SORULAN SORULAR BÖLÜMÜ -->
+    <section id="sss-bolumu" class="py-16 md:py-24 bg-white border-t border-klinik-border">
+        <div class="max-w-4xl mx-auto px-6 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <span class="font-sans text-xs font-semibold text-klinik-accent tracking-[0.2em] uppercase mb-3 block">Information</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-klinik-dark">Frequently Asked Questions</h2>
+                <div class="w-12 h-[1px] bg-klinik-dark mx-auto mt-4"></div>
+            </div>
+
+            <div class="space-y-3 md:space-y-4">
+                <div class="border border-klinik-border rounded-sm overflow-hidden bg-slate-50/50 transition duration-300">
+                    <button class="sss-tetikleyici w-full flex justify-between items-center px-4 py-4 md:px-6 md:py-5 text-left font-serif text-base md:text-lg text-klinik-dark hover:bg-slate-50 focus:outline-none transition-colors">
+                        <span class="pr-4">How long do occupational therapy sessions last and how often are they held?</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] md:text-xs text-klinik-accent transition-transform duration-300 pointer-events-none flex-shrink-0"></i>
+                    </button>
+                    <div class="sss-icerik max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white">
+                        <p class="p-4 md:p-6 font-sans text-xs md:text-sm text-klinik-accent font-light leading-relaxed border-t border-klinik-border">
+                            Occupational therapy sessions generally last a total of 60 minutes, including standard 45-50 minutes of practice and 5-10 minutes of family briefing. Session frequency is determined by the specialist as 1, 2, or more sessions per week depending on the child's needs and development chart after a detailed assessment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border border-klinik-border rounded-sm overflow-hidden bg-slate-50/50 transition duration-300">
+                    <button class="sss-tetikleyici w-full flex justify-between items-center px-4 py-4 md:px-6 md:py-5 text-left font-serif text-base md:text-lg text-klinik-dark hover:bg-slate-50 focus:outline-none transition-colors">
+                        <span class="pr-4">What is done in the first evaluation session?</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] md:text-xs text-klinik-accent transition-transform duration-300 pointer-events-none flex-shrink-0"></i>
+                    </button>
+                    <div class="sss-icerik max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white">
+                        <p class="p-4 md:p-6 font-sans text-xs md:text-sm text-klinik-accent font-light leading-relaxed border-t border-klinik-border">
+                            Direct intervention does not start in the first session; the child's motor, sensory, cognitive, and daily living skills are evaluated in detail with standard tests and clinical observations. At the same time, developmental history is taken from the family. At the end of the evaluation, the child's strengths and areas needing support are determined, and a personalized therapy plan is created with the family.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border border-klinik-border rounded-sm overflow-hidden bg-slate-50/50 transition duration-300">
+                    <button class="sss-tetikleyici w-full flex justify-between items-center px-4 py-4 md:px-6 md:py-5 text-left font-serif text-base md:text-lg text-klinik-dark hover:bg-slate-50 focus:outline-none transition-colors">
+                        <span class="pr-4">What is the difference between Sensory Integration Therapy and Occupational Therapy?</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] md:text-xs text-klinik-accent transition-transform duration-300 pointer-events-none flex-shrink-0"></i>
+                    </button>
+                    <div class="sss-icerik max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white">
+                        <p class="p-4 md:p-6 font-sans text-xs md:text-sm text-klinik-accent font-light leading-relaxed border-t border-klinik-border">
+                            Occupational therapy is a broad main discipline aiming for the individual's full independence in daily life activities. Sensory Integration Therapy, on the other hand, is a specific and evidence-based intervention method focusing on regulating the nervous system, frequently used by occupational therapists in the pediatric population (especially in sensory processing disorders).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border border-klinik-border rounded-sm overflow-hidden bg-slate-50/50 transition duration-300">
+                    <button class="sss-tetikleyici w-full flex justify-between items-center px-4 py-4 md:px-6 md:py-5 text-left font-serif text-base md:text-lg text-klinik-dark hover:bg-slate-50 focus:outline-none transition-colors">
+                        <span class="pr-4">Do families also participate in the therapy process?</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] md:text-xs text-klinik-accent transition-transform duration-300 pointer-events-none flex-shrink-0"></i>
+                    </button>
+                    <div class="sss-icerik max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white">
+                        <p class="p-4 md:p-6 font-sans text-xs md:text-sm text-klinik-accent font-light leading-relaxed border-t border-klinik-border">
+                            Yes, the biggest key to success in occupational therapy is family involvement. Detailed feedback is given to the family at the end of each session so that the work in the session room can be continued in home, school, and social life environments. The permanence of the process is ensured through "Sensory Diets" and home programs prepared for the child's sensory and developmental needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="iletisim" class="bg-klinik-dark text-white py-12 md:py-16 px-6 md:px-8 mt-auto border-t border-white/15">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 border-b border-white/15 pb-10 md:pb-12">
+        <div class="flex flex-col">
+            <a href="../en/index.html" class="flex items-center gap-4 mb-6 group">
+                <img loading="lazy" src="../amblem.png" alt="Hazal Pural Logo" class="h-10 md:h-12 w-auto object-contain transition mr-1 md:mr-2 brightness-0 invert">
+                <div class="flex flex-col border-l border-gray-500 pl-4">
+                    <span class="font-serif text-xl md:text-2xl font-semibold tracking-wide text-white">Hazal PURAL</span>
+                    <span class="font-sans text-[10px] md:text-xs text-gray-400 tracking-[0.2em] uppercase mt-0.5">Occupational Therapist</span>
+                </div>
+            </a>
+            <a href="mailto:hazalpural@gmail.com" class="font-sans text-sm text-gray-300 hover:text-white transition inline-block mt-2"><i class="fa-regular fa-envelope mr-2"></i> hazalpural@gmail.com</a>
+            <div class="flex gap-4 mt-6 md:mt-8">
+                <a href="https://www.instagram.com/ergoterapist_hazalpural/" class="border border-white/20 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white hover:text-klinik-dark transition text-gray-300"><i class="fa-brands fa-instagram text-sm"></i></a>
+                <a href="https://www.linkedin.com/in/hazalpural/" class="border border-white/20 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white hover:text-klinik-dark transition text-gray-300"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            </div>
+        </div>
+        <div>
+            <div class="flex items-center gap-3 mb-4 md:mb-6">
+                <img loading="lazy" src="../amblem.png" alt="Hazal Pural Logo" class="h-8 md:h-10 w-auto object-contain mr-1 brightness-0 invert opacity-50">
+                <h4 class="font-sans text-base md:text-lg font-semibold m-0 relative z-10">Disclaimer</h4>
+            </div>
+            <p class="font-sans text-xs md:text-sm text-gray-300 leading-relaxed font-light relative z-10">The content of our website is prepared to inform the visitor. The information on the site can never replace a doctor's treatment or consultation. Based on this source, it is strictly not recommended to start medication or change the existing treatment.</p>
+        </div>
+        <div class="md:pl-12 relative z-10">
+            <h4 class="font-sans text-base md:text-lg font-semibold mb-4 md:mb-6">Menu</h4>
+            <ul class="flex flex-col gap-3 md:gap-4 font-sans text-sm text-gray-300 font-light">
+                <li><a href="../en/index.html" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Home</a></li>
+                <li><a href="../en/index.html#hakkimda" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> About Me</a></li>
+                <li><a href="../en/egitim.html" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Certifications</a></li>
+                <li><a href="../en/index.html#hizmetler" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Services</a></li>
+                <li><a href="../en/index.html#iletisim" class="hover:text-white transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-6 md:mt-8 text-center text-gray-500 text-[10px] md:text-xs font-light relative z-10"><p>&copy; 2026 Hazal Pural. All rights reserved.</p></div>
+</footer>
+
+    <!-- YÜZEN WHATSAPP BUTONU -->
+    <a href="https://wa.me/905538084472?text=Hello%20Hazal,%20I%20am%20reaching%20out%20from%20your%20website,%20can%20I%20get%20some%20information?" target="_blank" rel="noopener noreferrer" class="fixed bottom-4 left-4 md:bottom-8 md:left-8 z-50 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-all duration-300 group focus:outline-none" aria-label="Message us on WhatsApp">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-70 animate-ping"></span>
+        <i class="fa-brands fa-whatsapp text-2xl md:text-3xl relative z-10"></i>
+        <span class="absolute left-14 md:left-16 bg-white text-klinik-dark text-[10px] md:text-xs font-semibold px-2 md:px-3 py-1.5 md:py-2 rounded shadow-md opacity-0 invisible md:group-hover:opacity-100 md:group-hover:visible transition-all whitespace-nowrap">Message Us</span>
+    </a>
+
+    <!-- YUKARI ÇIK BUTONU -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-klinik-dark text-white shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all duration-300 hover:bg-klinik-hover focus:outline-none" aria-label="Scroll to Top">
+        <i class="fa-solid fa-chevron-up text-sm md:text-base"></i>
+    </button>
+
+    
+
+    
+    \n    
+    
+    
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300" onclick="closeVideoModal()">
+        <div class="relative w-full max-w-4xl flex items-center justify-center">
+            <button onclick="closeVideoModal()" class="absolute -top-12 right-0 text-white hover:text-klinik-accent text-3xl transition-colors cursor-pointer" title="Kapat">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="w-full aspect-video bg-black rounded shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
+                <video id="modalVideoPlayer" class="w-full h-full" controls playsinline>
+                    <source src="" type="video/mp4">
+                    Tarayıcınız video etiketini desteklemiyor.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- CERTIFICATE MODAL -->
+    <div id="certModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300" onclick="closeCertModal()">
+        <div class="relative w-full max-w-4xl flex items-center justify-center">
+            <button onclick="closeCertModal()" class="absolute -top-12 right-0 text-white hover:text-klinik-accent text-3xl transition-colors cursor-pointer" title="Kapat">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="certModalImg" src="" alt="Sertifika" class="max-w-full max-h-[85vh] object-contain rounded shadow-2xl" onclick="event.stopPropagation()">
+        </div>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
